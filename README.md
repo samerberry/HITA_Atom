@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="AppScope/resources/base/media/app_icon.png" width="128" alt="HITA Atom 图标">
+  <img src="assets/appgallery/atom_icon.png" width="128" alt="HITA Atom 图标">
 </p>
 
 # HITA Atom
@@ -69,6 +69,7 @@ HITA Atom 聚焦周课表，复用主应用的课表绘制、课程编辑、模�
 ```text
 HITA_Atom/
 ├── AppScope/                         # 元服务名称、图标与应用配置
+├── assets/appgallery/                # AppGallery Connect 上传图标
 ├── entry/
 │   └── src/main/
 │       ├── ets/
@@ -147,13 +148,6 @@ node --test scripts/atomic-timetable.test.cjs
 - 学校认证方式或接口发生变化时，相关功能可能需要同步适配。
 
 本项目不是哈尔滨工业大学官方应用。发布前仍需完成元服务业务域名、隐私政策及发布签名等平台配置。
-
-## 致谢
-
-- [HITA NEXT](https://github.com/samerberry/HITA_NEXT)：周课表、课程编辑、公共组件及教务解析实现的来源。
-- [HITA Android](https://github.com/HIT-A/HITA_Android)：HITA 系列的主要功能逻辑和数据结构参考。
-- [HITA Aura](https://github.com/HIT-A/HITA-Aura)：HITA 系列界面布局与跨平台体验参考。
-- HITA 系列项目的开发者与贡献者。
 
 ## 授权状态
 

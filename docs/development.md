@@ -31,6 +31,16 @@ node scripts/sync-shared.cjs
 node scripts/sync-shared.cjs C:/path/to/HITA_NEXT
 ```
 
+## 元服务图标
+
+图标由 DevEco Studio 的 `New > Image Asset` 生成，使用原始 H 标志和 `#C4DDFD` 浅蓝外环。
+
+- 原始素材：`AppScope/resources/base/media/app_icon.png`（1024 × 1024），保留供重新生成。
+- 随包图标：`AppScope/resources/base/media/atom_icon.png`（512 × 512），生成后移入应用公共资源目录，应用图标、入口图标与启动窗口统一引用 `$media:atom_icon`。
+- 平台上传图标：`assets/appgallery/atom_icon.png`（216 × 216），用于 AppGallery Connect。
+
+重新生成时，在 `entry` 模块打开 Image Asset，名称填写 `atom_icon`，保存路径选择 `assets/appgallery`；将生成在模块资源目录的 512 像素图标同步到上述公共资源目录。
+
 ## 本地签名
 
 远程仓库的 `build-profile.json5` 不包含个人签名材料。首次克隆后，在 DevEco Studio 的 `File > Project Structure > Signing Configs` 为本机配置元服务签名。调试 Profile 必须包含验收设备，且应与本元服务的 App ID 和包名对应。
