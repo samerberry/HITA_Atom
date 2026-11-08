@@ -1,0 +1,296 @@
+[
+  {
+    "file": "common/components/DetailActionBar.ets",
+    "sourceSha256": "d0aac5981b4215353a5ccbf9d9fb5b446eeaf257966861a831d4385d1c86b744",
+    "extractedSha256": "533c4e37f11a6d70ad1b3e22610716869c0d3c8e64ee7ed2954149f3ce0c030d",
+    "adapted": true
+  },
+  {
+    "file": "common/components/HeaderActionButton.ets",
+    "sourceSha256": "46528dbe79397a8b9a945baeb177f577653d7035bb9ea91f40443ff52d48e121",
+    "extractedSha256": "46528dbe79397a8b9a945baeb177f577653d7035bb9ea91f40443ff52d48e121",
+    "adapted": false
+  },
+  {
+    "file": "common/components/HeaderBackButton.ets",
+    "sourceSha256": "f4a9d596f8769cfbd41b8df56fcb38af4c6478949464f227bc881e47799bdf3e",
+    "extractedSha256": "f4a9d596f8769cfbd41b8df56fcb38af4c6478949464f227bc881e47799bdf3e",
+    "adapted": false
+  },
+  {
+    "file": "common/components/HitaButton.ets",
+    "sourceSha256": "1bf1b40966c1e2e0fff82af0b7f1635cdfbaad1b793adff8ecc0dd6ddc751b58",
+    "extractedSha256": "1bf1b40966c1e2e0fff82af0b7f1635cdfbaad1b793adff8ecc0dd6ddc751b58",
+    "adapted": false
+  },
+  {
+    "file": "common/components/HitaListRow.ets",
+    "sourceSha256": "3cc6b8821419a3edb8b508efce522573b49094ce3267e5eb5bcd176ac1b36b78",
+    "extractedSha256": "3cc6b8821419a3edb8b508efce522573b49094ce3267e5eb5bcd176ac1b36b78",
+    "adapted": false
+  },
+  {
+    "file": "common/components/ImmersiveHeader.ets",
+    "sourceSha256": "3ea93cdf0f0012e9584cfab172b8e9cd4938c63b02c9fd201cc97e4cfffb6546",
+    "extractedSha256": "3ea93cdf0f0012e9584cfab172b8e9cd4938c63b02c9fd201cc97e4cfffb6546",
+    "adapted": false
+  },
+  {
+    "file": "common/components/SheetContent.ets",
+    "sourceSha256": "8b89ce390925f683bca9e8b30b77f4521145c302a71a9d58c705e80828a9e82f",
+    "extractedSha256": "8b89ce390925f683bca9e8b30b77f4521145c302a71a9d58c705e80828a9e82f",
+    "adapted": false
+  },
+  {
+    "file": "common/db/RdbHelper.ets",
+    "sourceSha256": "39236e8eac9f387a4c3b1f1d1fda2867f1bdced166c57a4566d7cd166f4fc7cd",
+    "extractedSha256": "c831484dc4a0ae759b29e3b1e17e9bed02c116a0429220c5a1e60974edda2f80",
+    "adapted": true
+  },
+  {
+    "file": "common/model/timetable/TimetableModels.ets",
+    "sourceSha256": "1f32d222766a9cb7a5a5a98422d97efc87e7b21c9ab7e09e59e0d2d3e39587a9",
+    "extractedSha256": "1f32d222766a9cb7a5a5a98422d97efc87e7b21c9ab7e09e59e0d2d3e39587a9",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/CirclePaintModifier.ets",
+    "sourceSha256": "41010d9b986b29fdee80704dd836b06f234e1542979f64c16daed5d2d95ea898",
+    "extractedSha256": "41010d9b986b29fdee80704dd836b06f234e1542979f64c16daed5d2d95ea898",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/CompatibleLightModifier.ets",
+    "sourceSha256": "b140a7f75d62fc9def23075291e19fb7d006e707d7b76ae8258f26bce5ee83c1",
+    "extractedSha256": "f07f975cc509718d0ddd2c412cc926fb124f53543e4d9aa07ee80a60ffc18132",
+    "adapted": true
+  },
+  {
+    "file": "common/theme/CompatibleMaterialModifier.ets",
+    "sourceSha256": "b90da98978c1b52680a18669762d73d775cd6d56a431ce576e4a21a4f9d507b8",
+    "extractedSha256": "b90da98978c1b52680a18669762d73d775cd6d56a431ce576e4a21a4f9d507b8",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/CompatiblePickerMaterial.ets",
+    "sourceSha256": "3f32315c52989488873b1b313df2ed5364c6678221807c818b3321bd17212cfe",
+    "extractedSha256": "3f32315c52989488873b1b313df2ed5364c6678221807c818b3321bd17212cfe",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/CompatibleSheetMaterial.ets",
+    "sourceSha256": "edb11774c55ff6e1eac27a6112935b6ccc3f86ad4ceea2c7fb05bc5b03c03246",
+    "extractedSha256": "edb11774c55ff6e1eac27a6112935b6ccc3f86ad4ceea2c7fb05bc5b03c03246",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/HeaderFade.ets",
+    "sourceSha256": "f91c4f4ca9c29aa65b3ea7ae33a32cc8d34b5d09d86ac128e9ffa9b3e61c5511",
+    "extractedSha256": "f91c4f4ca9c29aa65b3ea7ae33a32cc8d34b5d09d86ac128e9ffa9b3e61c5511",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/HitaColors.ets",
+    "sourceSha256": "6da47aa3fbec7a368dde1fec820ba71cf1a88ded39ca083151b9331b81fbd154",
+    "extractedSha256": "6da47aa3fbec7a368dde1fec820ba71cf1a88ded39ca083151b9331b81fbd154",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/HitaDesign.ets",
+    "sourceSha256": "837861d5a8300b3f6e270d531013c517080a391b60708804f3b20950d914d843",
+    "extractedSha256": "837861d5a8300b3f6e270d531013c517080a391b60708804f3b20950d914d843",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/ImmersiveHeaderMaterial.ets",
+    "sourceSha256": "9658cbcab4e9fffcd4470892321cfcc2a696efbe34ec03700ec116dfb8efbaa2",
+    "extractedSha256": "9658cbcab4e9fffcd4470892321cfcc2a696efbe34ec03700ec116dfb8efbaa2",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/ImmersivePickerMaterial.ets",
+    "sourceSha256": "4fde2dcd1feecd1e2c6c7f8596312156e761065e29eb5f6ab7ecbcff0b6e99e5",
+    "extractedSha256": "4fde2dcd1feecd1e2c6c7f8596312156e761065e29eb5f6ab7ecbcff0b6e99e5",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/ImmersiveSheetMaterial.ets",
+    "sourceSha256": "ca5715870dce1d545e9228a3767fb0f5ea5248437c3237b757186b5368e34fcf",
+    "extractedSha256": "ca5715870dce1d545e9228a3767fb0f5ea5248437c3237b757186b5368e34fcf",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/StatusBarInset.ets",
+    "sourceSha256": "b3f44a560fe544608682ef78bca57a0007538539e4d4b77b7f3b95ec074f268a",
+    "extractedSha256": "b3f44a560fe544608682ef78bca57a0007538539e4d4b77b7f3b95ec074f268a",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/TimetableBackdrop.ets",
+    "sourceSha256": "2bc48f991c63fd1495ddedafcc4f079b18dab1a1610e36d0f9b9b08ebb5b7372",
+    "extractedSha256": "2bc48f991c63fd1495ddedafcc4f079b18dab1a1610e36d0f9b9b08ebb5b7372",
+    "adapted": false
+  },
+  {
+    "file": "common/theme/TimetableTheme.ets",
+    "sourceSha256": "daeb4e4eda7804fd84b88025709797d65964fdaf0d50891b950b9c71111c2738",
+    "extractedSha256": "daeb4e4eda7804fd84b88025709797d65964fdaf0d50891b950b9c71111c2738",
+    "adapted": false
+  },
+  {
+    "file": "common/util/EasTimeTools.ets",
+    "sourceSha256": "b830efd956c9be2ee75dce5e12ea8445ef5aca6e77bad93e2f2d3598ccc5473d",
+    "extractedSha256": "b830efd956c9be2ee75dce5e12ea8445ef5aca6e77bad93e2f2d3598ccc5473d",
+    "adapted": false
+  },
+  {
+    "file": "common/util/HtmlSpaces.ets",
+    "sourceSha256": "53fd669953868457f08c639f7661860aadf2c6c677312998e4bbefc5f8de1ded",
+    "extractedSha256": "53fd669953868457f08c639f7661860aadf2c6c677312998e4bbefc5f8de1ded",
+    "adapted": false
+  },
+  {
+    "file": "common/util/ScheduleChangeSignal.ets",
+    "sourceSha256": "07df54faf060ac4924fea4bb1cade1302980cefb8b21011ff5fec392e3217567",
+    "extractedSha256": "07df54faf060ac4924fea4bb1cade1302980cefb8b21011ff5fec392e3217567",
+    "adapted": false
+  },
+  {
+    "file": "feature/eas/data/EasAcademicCalendar.ets",
+    "sourceSha256": "d516f35cbdb01921aae9bac6329fcf9503d5629b1b78a25ee194211c0e1b2bee",
+    "extractedSha256": "d516f35cbdb01921aae9bac6329fcf9503d5629b1b78a25ee194211c0e1b2bee",
+    "adapted": false
+  },
+  {
+    "file": "feature/eas/data/EasLegacyCourseCatalogParser.ets",
+    "sourceSha256": "33252d8fef4b3497f3e61a0c2b494247653dc98497c1a79d879160d3e8a616e5",
+    "extractedSha256": "33252d8fef4b3497f3e61a0c2b494247653dc98497c1a79d879160d3e8a616e5",
+    "adapted": false
+  },
+  {
+    "file": "feature/eas/data/EasLegacyTimetableParser.ets",
+    "sourceSha256": "4d565ac43ae114100dfc5c786e72d23b461631bed121cf7412230893b44defc0",
+    "extractedSha256": "4d565ac43ae114100dfc5c786e72d23b461631bed121cf7412230893b44defc0",
+    "adapted": false
+  },
+  {
+    "file": "feature/eas/data/ShenzhenWebTimetableParser.ets",
+    "sourceSha256": "77b362f31bd6e6cec50564650e1de7c1826337fac1632b2219c54ac44899e176",
+    "extractedSha256": "77b362f31bd6e6cec50564650e1de7c1826337fac1632b2219c54ac44899e176",
+    "adapted": false
+  },
+  {
+    "file": "feature/eas/model/EasModels.ets",
+    "sourceSha256": "e2c3f9087c3b5e7980e13c0fb8f09673cbb5043af2f0b3541d00ddcd079a84d0",
+    "extractedSha256": "e2c3f9087c3b5e7980e13c0fb8f09673cbb5043af2f0b3541d00ddcd079a84d0",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/CourseBatchEdit.ets",
+    "sourceSha256": "b975466bead7709e57df5b69000e6305a229270e7384da64cd3988fedd8ce122",
+    "extractedSha256": "b975466bead7709e57df5b69000e6305a229270e7384da64cd3988fedd8ce122",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/CourseDateSelection.ets",
+    "sourceSha256": "5ecb7ddcacbb9866300ac80cbbfd475185745136c7732dd535f48be4209bded4",
+    "extractedSha256": "5ecb7ddcacbb9866300ac80cbbfd475185745136c7732dd535f48be4209bded4",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/data/TimetableDisplayOptions.ets",
+    "sourceSha256": "ae6dab0fef289be80b6cf7067cf5576372da2cbf010a104fc8f89ea84c741ef6",
+    "extractedSha256": "ae6dab0fef289be80b6cf7067cf5576372da2cbf010a104fc8f89ea84c741ef6",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/data/TimetableResolver.ets",
+    "sourceSha256": "5fbf06418791a176638dd58ba65ac0e1812e91dd51f8eac68d55f57ddefc3eff",
+    "extractedSha256": "5fbf06418791a176638dd58ba65ac0e1812e91dd51f8eac68d55f57ddefc3eff",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/data/TimetableSelectionStore.ets",
+    "sourceSha256": "32131842f7e1d936701ee1b205580d90c92901ea05ba73fb5baed311083815fe",
+    "extractedSha256": "32131842f7e1d936701ee1b205580d90c92901ea05ba73fb5baed311083815fe",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseColorEditor.ets",
+    "sourceSha256": "eec92c9febdf6e272c751a26ce2db84db01e45288ada76a753be5fae1b29631d",
+    "extractedSha256": "eec92c9febdf6e272c751a26ce2db84db01e45288ada76a753be5fae1b29631d",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseColorModel.ets",
+    "sourceSha256": "28f0ed9a43922a75e484cd7a4bbd5aafcdebd5add6050b4efd84b28d4f2eb84a",
+    "extractedSha256": "28f0ed9a43922a75e484cd7a4bbd5aafcdebd5add6050b4efd84b28d4f2eb84a",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseControlHost.ets",
+    "sourceSha256": "31b0ecb91a70cb728c634f6d4b5832133ab9221498cfd8f2815a4fec07cc928d",
+    "extractedSha256": "31b0ecb91a70cb728c634f6d4b5832133ab9221498cfd8f2815a4fec07cc928d",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseDetailContent.ets",
+    "sourceSha256": "c8d97b4cb5ff825177031d6b2a1cf676056d1853522a789d3310a45ba9a96b8e",
+    "extractedSha256": "c8d97b4cb5ff825177031d6b2a1cf676056d1853522a789d3310a45ba9a96b8e",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseModeSegment.ets",
+    "sourceSha256": "1958339f5b66e0da81e7e8d820d6135b3803bc4a3e1c6be9d6004c0d5a7130cc",
+    "extractedSha256": "1958339f5b66e0da81e7e8d820d6135b3803bc4a3e1c6be9d6004c0d5a7130cc",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseTextPickerDialog.ets",
+    "sourceSha256": "27b2759bec99cbc0019c117c1d028b9bf67a63846d1487c6f720016d857f17bd",
+    "extractedSha256": "27b2759bec99cbc0019c117c1d028b9bf67a63846d1487c6f720016d857f17bd",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseTimePickerDialog.ets",
+    "sourceSha256": "a0ddf99d750bb1f487195c54b51c816d8fab6f8a871f8009386ec448cf22d887",
+    "extractedSha256": "a0ddf99d750bb1f487195c54b51c816d8fab6f8a871f8009386ec448cf22d887",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/CourseWeekPicker.ets",
+    "sourceSha256": "77c9f0712af8e074690bfbc35b28cf8e4ca398457b311942e5c8fe50a587350f",
+    "extractedSha256": "77c9f0712af8e074690bfbc35b28cf8e4ca398457b311942e5c8fe50a587350f",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/ImmersiveCourseModeSegment.ets",
+    "sourceSha256": "bfffdd8aff5c8cf9e45ef7b0096188c475ea2b7e4c9e9bb3969955408cc89bf4",
+    "extractedSha256": "bfffdd8aff5c8cf9e45ef7b0096188c475ea2b7e4c9e9bb3969955408cc89bf4",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/PlaceMarquee.ets",
+    "sourceSha256": "bcc9493f8969e979de13d268f1f80195fd4fd87bca2fef564b795515e73119ac",
+    "extractedSha256": "bcc9493f8969e979de13d268f1f80195fd4fd87bca2fef564b795515e73119ac",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/TimetableCardPainter.ets",
+    "sourceSha256": "6579d1be6fb77fee885c4e4b55458f320097b7efd713ab677777969552d53889",
+    "extractedSha256": "6579d1be6fb77fee885c4e4b55458f320097b7efd713ab677777969552d53889",
+    "adapted": false
+  },
+  {
+    "file": "feature/timetable/views/TimetableWeekDraw.ets",
+    "sourceSha256": "6c909d5386d99d7bc32c7a5370696fc5d29d150022782306d43a1c620206b408",
+    "extractedSha256": "6c909d5386d99d7bc32c7a5370696fc5d29d150022782306d43a1c620206b408",
+    "adapted": false
+  },
+  {
+    "file": "pages/AddEventPage.ets",
+    "sourceSha256": "b24e8632a35e4cc2312dc9fb82c8c01ba582f787201f9d74280284f817680113",
+    "extractedSha256": "b24e8632a35e4cc2312dc9fb82c8c01ba582f787201f9d74280284f817680113",
+    "adapted": false
+  }
+]

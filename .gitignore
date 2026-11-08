@@ -1,0 +1,28 @@
+/.hvigor/
+/oh_modules/
+**/oh_modules/
+/local.properties
+/.idea/
+/build/
+**/build/
+/build-profile.local.json5
+
+# Local environment and signing materials
+.env
+.env.*
+*.p12
+*.p7b
+*.pem
+*.key
+*.cer
+*.jks
+*.keystore
+
+# Build output and local diagnostics
+*.log
+*.hap
+*.hsp
+*.app
+/hita-top-before.jpeg
+/node_modules/
+**/node_modules/

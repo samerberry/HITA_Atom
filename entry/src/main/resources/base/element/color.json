@@ -1,0 +1,388 @@
+{
+  "color": [
+    {
+      "name": "hita_widget_accent",
+      "value": "#2365B2"
+    },
+    {
+      "name": "hita_immersive_sheet_card",
+      "value": "#8CFFFFFF"
+    },
+    {
+      "name": "hita_immersive_card_base",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "hita_immersive_segment_selected",
+      "value": "#1F000000"
+    },
+    {
+      "name": "hita_immersive_hero_tint",
+      "value": "#EB0068D9"
+    },
+    {
+      "name": "hita_page",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_page_f6f7fa",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_page_f5f6f8",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_surface",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "hita_surface_soft",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_surface_soft_f8fafd",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_surface_soft_f4f7fb",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_control",
+      "value": "#F2F4F7"
+    },
+    {
+      "name": "hita_control_f3f4f6",
+      "value": "#F3F4F6"
+    },
+    {
+      "name": "hita_control_f1f4f8",
+      "value": "#F1F4F8"
+    },
+    {
+      "name": "hita_control_eaf0f7",
+      "value": "#EAF0F7"
+    },
+    {
+      "name": "hita_control_e8edf4",
+      "value": "#E8EDF4"
+    },
+    {
+      "name": "hita_text",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_1a1a1a",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_1d2b45",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_202633",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_202b45",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_242a36",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_303746",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_333333",
+      "value": "#181C24"
+    },
+    {
+      "name": "hita_text_secondary",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_566276",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_5a6880",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_6b7a90",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_72809a",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_788196",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_7b8190",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_7b8498",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_secondary_808080",
+      "value": "#626873"
+    },
+    {
+      "name": "hita_text_hint",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_9aa2b1",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_a0a7b5",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_a3adbb",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_a9b4c2",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_b0b4ba",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_b2b8c4",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_text_hint_b7c7d9",
+      "value": "#767D89"
+    },
+    {
+      "name": "hita_primary",
+      "value": "#0068D9"
+    },
+    {
+      "name": "hita_primary_3390ec",
+      "value": "#0068D9"
+    },
+    {
+      "name": "hita_selected",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_e4f0ff",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_e8f1fb",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_e8f3fd",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_eaf3fd",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_ebf4fc",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_dceaf8",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_selected_cfe3fa",
+      "value": "#E8F3FF"
+    },
+    {
+      "name": "hita_divider",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_d7e0ec",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_dce4f0",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_dde4ee",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_e3eaf2",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_edf1f7",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_eef1f5",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_eef1f6",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_e8e8e8",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_c5cdd8",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_c9d1dd",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_divider_c9d2de",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "hita_error",
+      "value": "#D93025"
+    },
+    {
+      "name": "hita_error_e53935",
+      "value": "#E53935"
+    },
+    {
+      "name": "hita_error_b91c1c",
+      "value": "#B91C1C"
+    },
+    {
+      "name": "hita_error_c23b4a",
+      "value": "#C23B4A"
+    },
+    {
+      "name": "hita_error_8c3a3a",
+      "value": "#8C3A3A"
+    },
+    {
+      "name": "hita_error_8a2e42",
+      "value": "#8A2E42"
+    },
+    {
+      "name": "hita_error_surface",
+      "value": "#FCE8E6"
+    },
+    {
+      "name": "hita_error_surface_fdecec",
+      "value": "#FDECEC"
+    },
+    {
+      "name": "hita_error_surface_fff1f0",
+      "value": "#FFF1F0"
+    },
+    {
+      "name": "hita_error_surface_f8dcd4",
+      "value": "#F8DCD4"
+    },
+    {
+      "name": "hita_error_border",
+      "value": "#FFD6D2"
+    },
+    {
+      "name": "hita_success",
+      "value": "#248A5A"
+    },
+    {
+      "name": "hita_success_2e7d32",
+      "value": "#2E7D32"
+    },
+    {
+      "name": "hita_success_0f6e56",
+      "value": "#0F6E56"
+    },
+    {
+      "name": "hita_success_surface",
+      "value": "#E6F5ED"
+    },
+    {
+      "name": "hita_success_surface_ddf3e5",
+      "value": "#DDF3E5"
+    },
+    {
+      "name": "hita_warning",
+      "value": "#B45309"
+    },
+    {
+      "name": "hita_warning_surface",
+      "value": "#FBEAC8"
+    },
+    {
+      "name": "hita_link",
+      "value": "#1B4F9C"
+    },
+    {
+      "name": "hita_disabled",
+      "value": "#AFC8E8"
+    },
+    {
+      "name": "hita_disabled_aab4c1",
+      "value": "#AAB4C1"
+    },
+    {
+      "name": "hita_focus",
+      "value": "#9CC5F5"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#F5F6F8"
+    },
+    {
+      "name": "hita_primary_fill",
+      "value": "#0068D9"
+    },
+    {
+      "name": "hita_error_fill",
+      "value": "#D93025"
+    },
+    {
+      "name": "hita_sheet_mask",
+      "value": "#3D14213D"
+    },
+    {
+      "name": "hita_hero_chip",
+      "value": "#5AA2EE"
+    },
+    {
+      "name": "hita_on_primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "hita_on_primary_secondary",
+      "value": "#E2EFFF"
+    },
+    {
+      "name": "hita_card_shadow",
+      "value": "#08000000"
+    },
+    {
+      "name": "hita_dock_mask",
+      "value": "#66F1F3F5"
+    },
+    {
+      "name": "hita_dock_mask_clear",
+      "value": "#00F1F3F5"
+    }
+  ]
+}
