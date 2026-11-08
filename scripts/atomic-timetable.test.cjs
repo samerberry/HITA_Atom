@@ -506,6 +506,117 @@ test('import plans retain each campus schedule and reject invalid or overlapping
   assert.throws(() => AcademicImportPlan.create(term, [course], start, '深圳', overlapping), /作息时间无法解析/);
 });
 
+test('login reads publish a complete term snapshot and navigation discards late results', async t => {
+  const { page } = loginHarness(t);
+  const term = { name: '秋季', isCurrent: true };
+  const courses = [{ name: '数学' }], periods = [{ from: '08:00', to: '08:45' }];
+  let resolvePeriods;
+  page.client.terms = async () => [term];
+  page.client.courses = async () => courses;
+  page.client.structure = () => new Promise(resolve => { resolvePeriods = resolve; });
+  page.client.firstWeek = async () => 12345;
+  const pending = page.verify();
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(page.ready, true);
+  assert.equal(page.busy, true);
+  assert.deepEqual(page.courses, []);
+  assert.deepEqual(page.structure, []);
+  resolvePeriods(periods); await pending;
+  assert.equal(page.courses, courses);
+  assert.equal(page.structure, periods);
+  assert.equal(page.firstWeek, 12345);
+  assert.equal(page.busy, false);
+
+  const cancelled = page.verify();
+  await new Promise(resolve => setImmediate(resolve));
+  page.pageStarted('https://ids.hit.edu.cn/authserver/login');
+  resolvePeriods(periods); await cancelled;
+  assert.equal(page.ready, false);
+  assert.deepEqual(page.courses, []);
+  assert.deepEqual(page.structure, []);
+  assert.equal(page.firstWeek, 0);
+  assert.equal(page.error, '');
+});
+
+test('failed term reads never expose a partial course snapshot; missing calendar remains editable', async t => {
+  const { page } = loginHarness(t);
+  page.client.terms = async () => [{ name: '秋季', isCurrent: true }];
+  page.client.courses = async () => [{ name: '数学' }];
+  page.client.structure = async () => { throw new Error('教务节次读取失败'); };
+  await page.verify();
+  assert.equal(page.error, '教务节次读取失败');
+  assert.equal(page.busy, false);
+  assert.deepEqual(page.courses, []);
+  assert.deepEqual(page.structure, []);
+  assert.equal(page.firstWeek, 0);
+
+  page.client.structure = async () => [{ from: '08:00', to: '08:45' }];
+  page.client.firstWeek = async () => { throw new Error('教务校历不可用'); };
+  await page.verify();
+  assert.equal(page.error, '');
+  assert.equal(page.courses.length, 1);
+  assert.equal(page.firstWeek, 0, 'requires a manually selected Monday before import');
+});
+
+test('login callbacks ignore old documents and attempt each document only once', async t => {
+  const { page, controller } = loginHarness(t);
+  const current = vpnBase + '/home';
+  controller.url = current;
+  page.pageStarted(current);
+  let requests = 0;
+  page.client.terms = async () => { requests++; throw new Error('教务会话尚未就绪'); };
+  page.pageEnded('https://ids.hit.edu.cn/authserver/login');
+  assert.equal(page.pageLoading, true);
+  assert.equal(requests, 0);
+  page.pageEnded(current);
+  await new Promise(resolve => setImmediate(resolve));
+  page.pageEnded(current);
+  assert.equal(requests, 1, 'duplicate page callbacks must not keep retrying a failed read');
+  assert.equal(page.pageLoading, false);
+  assert.equal(page.error, '', 'an unauthenticated landing page is not a user-visible failure');
+  await page.verify();
+  assert.equal(requests, 2, 'manual retry is still available');
+  assert.equal(page.error, '教务会话尚未就绪');
+  page.pageStarted('https://ids.hit.edu.cn/authserver/login');
+  page.loadFailed('网页加载较慢，请刷新重试');
+  controller.url = 'https://ids.hit.edu.cn/authserver/login';
+  page.pageEnded(controller.url);
+  assert.equal(page.error, '', 'a page which eventually loads clears its loading error');
+  page.aboutToDisappear();
+  page.pageEnded(current);
+  assert.equal(requests, 2);
+  assert.equal(page.pageLoadTimer, -1);
+});
+
+test('hidden-page navigation cannot reset an in-progress import', t => {
+  const { page } = loginHarness(t);
+  page.ready = true; page.busy = true; page.importing = true;
+  page.courses = [{ name: '数学' }]; page.firstWeek = 12345;
+  const generation = page.navigationGeneration;
+  page.pageStarted('https://ids.hit.edu.cn/authserver/login');
+  page.loadFailed('网页加载失败');
+  assert.equal(page.navigationGeneration, generation);
+  assert.equal(page.ready, true);
+  assert.equal(page.busy, true);
+  assert.equal(page.courses.length, 1);
+  assert.equal(page.firstWeek, 12345);
+  assert.equal(page.error, '');
+});
+
+function loginHarness(t) {
+  class Controller {
+    url = vpnBase + '/home';
+    getUrl() { return this.url; }
+    accessBackward() { return false; }
+  }
+  const h = harness(t, { '@kit.ArkWeb': { webview: { WebviewController: Controller } } });
+  const { AcademicLoginContent } = h.load('atomic/AcademicLoginContent.ets');
+  const page = new AcademicLoginContent();
+  page.alive = true; page.pageLoading = false;
+  t.after(() => page.aboutToDisappear());
+  return { page, controller: page.controller };
+}
+
 function harness(t, kitMocks = {}) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'hita-atomic-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
@@ -529,7 +640,14 @@ function harness(t, kitMocks = {}) {
   const load = (relative, cache = new Map()) => {
     const file = path.resolve(root, relative);
     if (cache.has(file)) return cache.get(file).exports;
-    const source = fs.readFileSync(file, 'utf8');
+    let source = fs.readFileSync(file, 'utf8');
+    if (file.endsWith('AcademicLoginContent.ets')) {
+      // Execute the actual component's lifecycle/read methods in Node. Declarative
+      // ArkUI builders are checked by the real SDK in assembleHap instead.
+      source = source.slice(0, source.indexOf('  @Builder')) + '}';
+      source = source.replace('@Component', '').replace('export struct ', 'export class ')
+        .replace(/@StorageProp\([^)]*\)\s*/g, '').replace(/@State\s*/g, '');
+    }
     const compiled = ts.transpileModule(source, { compilerOptions: {
       target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.CommonJS
     } }).outputText;

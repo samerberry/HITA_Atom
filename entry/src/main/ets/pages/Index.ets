@@ -56,7 +56,6 @@ struct Index {
   @State colorPreview: number = 0;
   @State busy: boolean = false;
   @State sheetError: string = '';
-  @State importMessage: string = '';
   @State loginCampus: string = '威海';
   @State weekOffset: number = 0;
   @State weekAnimating: boolean = false;
@@ -413,7 +412,6 @@ struct Index {
         .enabled(this.timetable !== undefined && !this.weekAnimating && !this.sheetVisible)
         .onClick(() => this.chooseWeek())
       this.headerAction($r('sys.symbol.arrow_down'), '教务导入', () => {
-        this.importMessage = '';
         this.sheetMode = AtomicSheet.IMPORT;
         this.sheetVisible = true;
       });
@@ -569,8 +567,6 @@ struct Index {
             } })
         }, (campus: string): string => campus)
       }.width('100%').backgroundColor($r('app.color.hita_surface')).borderRadius(HitaDesign.cardRadius)
-      Text(this.importMessage.length > 0 ? this.importMessage : '请选择校区')
-        .fontSize(HitaDesign.caption).fontColor(HitaColors.onSurfaceVariant).width('100%')
     }.padding({ left: HitaDesign.inset, right: HitaDesign.inset, bottom: HitaDesign.spaceLg })
   }
 
@@ -578,7 +574,9 @@ struct Index {
   private sheetContent() {
     SheetContent({ fillHeight: this.sheetMode === AtomicSheet.EDITOR || this.sheetMode === AtomicSheet.LOGIN }) {
       if (this.sheetMode === AtomicSheet.LOGIN) {
-        AcademicLoginContent({ campus: this.loginCampus, onImported: () => { this.sheetVisible = false; this.refresh(true); } })
+        AcademicLoginContent({ campus: this.loginCampus,
+          onBack: () => { this.sheetMode = AtomicSheet.IMPORT; },
+          onImported: () => { this.sheetVisible = false; this.refresh(true); } })
       } else if (this.sheetMode === AtomicSheet.SETUP) {
         AtomicTermSetup({ saving: this.busy, error: this.sheetError,
           onCreate: (date: number, weeks: number, campus: number) => this.createTimetable(date, weeks, campus),
